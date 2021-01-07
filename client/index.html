@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="nl">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Sogyo Adventure</title>
+        <meta name="description" content="The ticket shop for Sogyo employees">
+
+        <link rel="stylesheet" href="style/main.css">
+        <link rel="shortcut icon" href="img/favicon.ico">
+    </head>
+
+    <body>
+        <header id="header-wrapper">
+          <header id="header-container">
+            <header id="logo-header">
+              <img src="img/logo_sogyo_rgb_199x200-1.jpg">
+            </header>
+            <header id="mainheader">
+              Sogyo Adventure
+            </header>
+          </header>
+        </header>
+
+        <nav>
+          <div id="navbar">
+            <a id="home" href="index.html">
+              Home
+            </a>
+            <a id="map" href="map.html">
+              Discover
+            </a>
+            <a id="shoppingbasket" href="shoppingbasket.html">
+              Shopping basket <div class="badge">0</div>
+            </a>
+            <a id="myorders" href="orders.html">
+              My orders
+            </a>
+            <a id="admin" href="admin.html">
+              Admin
+            </a>
+          </div>
+        </nav>
+
+        <main>
+          <div id="placeholder"></div>
+        </main>
+
+        <template>
+          <article>
+            <div class="parkname">parkname</div>
+            <div class="parkdescription">parkdescription</div>
+            <div class="order">
+              <div class="prices">
+                <div class="adultprice">
+                  Adults:
+                  <span class="sign">&euro;</span>
+                  <span class="price">adultprice</span>
+                </div>
+                <div class="kidsprice">Kids:
+                  <span class="sign">&euro;</span>
+                  <span class="price">kidprice</span>
+                </div>
+                <div class="discountrequirement">
+                  <em>
+                    Family ticket:
+                  </em>
+                  Buy
+                  <span class="adults">
+                    minadults
+                  </span>
+                  adult tickets &
+                  <span class="child">
+                    minkids
+                  </span>
+                   kid tickets for a
+                   <span class="percentage">
+                     percentage
+                   </span>
+                   % discount!
+                </div>
+              </div>
+              <label>Adults: </label>
+              <input
+                placeholder="0"
+                type="number"
+                class="numberofadults"
+                defaultValue="0"
+                min="0"
+              />
+              <label>Kids: </label>
+              <input
+                placeholder="0" 
+                type="number"
+                class="numberofkids"
+                defaultValue="0"
+                min="0"
+              />
+              <div class="total">
+                <span class="sign">&euro;</span>
+                <span class="price">0</span>
+              </div>
+              <button class="orderbutton">Add to shopping basket!</button>
+            </div>
+          </article>
+        </template>
+
+        <script src="src/index.js"></script>
+    </body>
+</html>
