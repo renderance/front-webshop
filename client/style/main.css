@@ -1,0 +1,191 @@
+body {
+    font-family: 'Lato', sans-serif;
+    padding: 0px;
+    margin: 0px;
+
+    --primary-color: #007936;
+    --accent-color: #eee;
+    --tertiary-color: #19502c;
+    --light-text-color: rgb(107, 107, 107);
+    --contrast-color: #a1443f;
+    --contrast-secondary-color: #872321;
+    --contrast-tertiary-color: #450605;
+    --button-color: #4CAF50;
+    --accent-second: #8e8e8e;
+    --accent-first: #bebebe;
+}
+
+/* Describes the styling of the one and only element with id="mainheader", note the # in front of mainheader */
+#mainheader {
+    background-color: var(--primary-color);
+    color: white;
+    display: inline;
+    position: absolute;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    top:15%;
+    font-size: min(max(18px, 6vw), 64px)
+}
+
+#logo-header {
+    width: 15px;
+    display: inline;
+
+}
+
+#logo-header img {
+    width: min(max(16px,12%), 100px);
+    height: auto;
+    justify-content:center;
+    display: inline;
+    margin-left:2%;
+    margin-right:2%;
+}
+
+#header-wrapper {
+    background-color: var(--primary-color);
+    position:relative;
+}
+
+#header-container {
+    max-width: 960px;
+    margin: auto;
+    overflow: auto;
+}
+
+main {
+    max-width: 720px;
+    margin: auto;
+    padding: 2%;
+}
+
+nav
+{
+    width: 100%;
+    font-size: min(max(10px, 2vw), 16px);
+    line-height:1.7em;
+    background-color: var(--primary-color);
+    top: 0;
+    position: sticky;
+    text-align:center;
+}
+
+a
+{
+    height:1.5em;
+    position: static;
+    display: inline-block;
+    padding-right:1%;
+    padding-left:1%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:white;
+    background-color: var(--primary-color);
+    box-shadow: 0 0.2em 0 var(--tertiary-color);
+    --badge-color: var(--contrast-color);
+}
+
+a:hover{
+    background-color:var(--contrast-color);
+    box-shadow: 0 0.2em 0 var(--contrast-secondary-color);
+    --badge-color: var(--contrast-secondary-color);
+}
+
+a:active{
+    background-color:var(--contrast-secondary-color);
+    box-shadow: 0 0.2em 0 var(--contrast-tertiary-color);
+    --badge-color: var(--contrast-tertiary-color);
+}
+
+/* Describes the styling of all <article> elements */
+article {
+    border: 1px solid var(--primary-color);
+    --park-head-color: var(--primary-color);
+    --park-head-secondary-color: var(--tertiary-color);
+    color: var(--light-text-color);
+    margin: 1%;
+}
+
+article:hover{
+    border: 1px solid var(--contrast-color);
+    --park-head-color: var(--contrast-color);
+    --park-head-secondary-color: var(--contrast-secondary-color);
+}
+
+/* Describes the styling of all elements with class="parkname", note the . in front of parkname */
+.parkname {
+    padding:0.1em;
+    background-color: var(--park-head-color);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.parkdescription {
+    margin:1em;
+}
+
+.order {
+    margin:1em;
+}
+
+.badge {
+    background-color: var(--badge-color);
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    width: 2em;
+    border-radius: 50%;
+}
+
+.orderbutton{
+    background-color: var(--park-head-color);
+    border:none;
+    box-shadow: 0 3px 0 var(--park-head-secondary-color);
+    color: white;
+    padding: 6px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top:2%;
+}
+
+.orderbutton:hover{
+    background-color:var(--contrast-color);
+    box-shadow: 0 3px 0 var(--contrast-secondary-color);
+}
+
+.orderbutton:active{
+    background-color:var(--contrast-secondary-color);
+    box-shadow: 0 3px 0 var(--contrast-tertiary-color);
+}
+
+.totalprice{
+    display: inline;
+    padding: 1em;
+}
+
+button{
+    background-color: var(--primary-color);
+    border:none;
+    box-shadow: 0 3px 0 var(--tertiary-color);
+    color: white;
+    padding: 6px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color:var(--contrast-color);
+    box-shadow: 0 3px 0 var(--contrast-secondary-color);
+}
+
+button:active{
+    background-color:var(--contrast-secondary-color);
+    box-shadow: 0 3px 0 var(--contrast-tertiary-color);
+}
